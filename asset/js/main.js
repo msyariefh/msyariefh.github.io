@@ -105,7 +105,6 @@ function getData(idParams, target){
       `;
       data.standings[0].table.forEach(myFunction);
         function myFunction(value){
-          console.log(value)
             klasemen+=`
         <tr>
           <td><a class="nama_klub" href="./info_tim.html?id=${value.team.id}">
