@@ -1,0 +1,128 @@
+.text-upper{
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+}
+.batas{
+    padding: 15%;
+}
+.nama_klub{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.logo_klub{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.logo_klub_mini{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header_klub{
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.nama_klub_info{
+  display: grid;
+  color: white;
+}
+.nama_klub_info h3{
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.nama_klub_info h5, h6{
+  font-weight: lighter;
+  text-align: right;
+  margin-bottom: 0;
+}
+.card-round{
+  border-radius: 10px 10px 0 0;
+}
+.menu{
+  padding-left: .5rem;
+  font-size: 1rem;
+}
+.px20{
+  margin-bottom: 20px;
+}
+th{
+  border-radius: 0;
+}
+.kotak{
+  display: grid;
+  justify-items: center;
+}
+.navbar-fixed {
+  z-index: 999; 
+}
+.wadah_prelod{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.skor{
+  height: 50px;
+  padding: 2px;
+  display: grid;
+  align-items: center;
+}
+.warna{
+  background: rgb(0, 128, 128);
+  background: linear-gradient(45deg, rgba(0,128,128,1) 0%, rgba(0,125,121,1) 80%, rgba(255,255,255,0) 80.2%);
+}
+.warna-i{
+  background: rgb(0, 128, 128);
+  background: linear-gradient(135deg, rgba(0,128,128,1) 0%, rgba(0,125,121,1) 80%, rgba(255,255,255,0) 80.2%);
+}
+@media screen and (max-width:640px) {
+  nav .brand-logo{
+    font-size: 1.75em;
+  }
+  #img_team{
+    display: grid;
+    justify-content: center;
+  }
+  .nama_klub_info{
+    margin-bottom: 20px;
+  }
+  .nama_klub_info h3{
+    text-align: center;
+  }
+  .nama_klub_info h5, h6{
+    text-align: center;
+  }
+  .header_klub{
+    display: grid;
+    justify-content: center;
+  }
+}
+.wadah-sch{
+  display: flex;
+  align-items: center;
+}
+.vs{
+  writing-mode: vertical-rl; 
+  text-orientation: upright;
+  display: grid;
+  align-content: center;
+  font-weight: bold;
+  border-right: 1px solid teal;
+  border-left: 1px solid teal;
+}

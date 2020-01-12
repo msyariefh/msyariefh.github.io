@@ -1,0 +1,22 @@
+{
+    "name": "Football News",
+    "short_name": "Football News",
+    "description": "Aplikasi bola submission ke3",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#26a69a",
+    "theme_color": "#26a69a",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src": "/asset/img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/asset/img/logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="asset/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="/asset/css/own.css">
+      <meta name="description" content="This is My Website!!!"/>
+      <title>Football News</title>
+      <link rel="manifest" href="/asset/manifest.json">
+      <meta name="theme-color" content="#26a69a"/>
+      <link rel="apple-touch-icon" href="/asset/img/logo.svg">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="navbar-fixed">
+      <nav class="teal lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="/index.html" class="brand-logo" id="logo-container">Football News</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="favorit.html" style="display: flex; align-items: center;"><i class="material-icons">favorite</i><span class="menu">Tim Favorit</span></a></li>
+       </ul>
+    </div>
+      </nav>
+      </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="favorit.html" style="display: flex; align-items: center;"><i class="material-icons">favorite</i><span class="menu">Tim Favorit</span></a></li>
+   </ul>
+      <div class="section">
+        <div class="container">
+        <div class="card">
+          <div class="card-content ">
+            <div class="card teal card-round">
+          <h4 class="center text-upper white-text" style="padding:0.5em;">Daftar Liga Pilihan</h4>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabsku row" style="height: unset;">
+              <li class="tab col s3" style="height: unset;"><a class="active" href="#epl">
+                <div class="card">
+                  <div class="card-image batas">
+                    <img src="/asset/img/epl_logo.svg">
+                  </div>
+                </div>
+                
+              </a></li>
+              <li class="tab col s3" style="height: unset;"><a  href="#laliga">
+                <div class="card">
+                  <div class="card-image batas">
+                    <img src="/asset/img/laliga.svg">
+                  </div>
+                </div>
+              </a></li>
+              <li class="tab col s3" style="height: unset;"><a href="#seriea">
+                <div class="card">
+                  <div class="card-image batas">
+                    <img src="/asset/img/seriea.svg">
+                  </div>
+                </div>
+              </a></li>
+              <li class="tab col s3" style="height: unset;"><a href="#bundesliga">
+                <div class="card">
+                  <div class="card-image batas">
+                    <img src="/asset/img/bundesliga.svg">
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div id="epl">
+                <div class="wadah_prelod">
+                  <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="laliga">
+                <div class="wadah_prelod">
+                  <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="seriea">
+                <div class="wadah_prelod">
+                  <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bundesliga">
+                <div class="wadah_prelod">
+                  <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+     </div>
+     </div>
+     <footer >
+      <div class="footer-copyright teal lighten-1">
+        <div class="container" style="padding:15px 0 15px 0;">
+          Dicoding Submission M. Syarief Hidayatulloh
+          </div>
+      </div>
+    </footer>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="/asset/js/main.js"></script>
+      <script type="text/javascript" src="asset/js/materialize.min.js"></script>
+      <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+      </script>
+      <script>
+        let elem = document.querySelector('.tabsku'); let instance = M.Tabs.init(elem, {});
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.sidenav');
+          let instances = M.Sidenav.init(elems, {}); });
+        getData("PL", "epl");
+        getData("PD", "laliga");
+        getData("SA", "seriea");
+        getData("BL1", "bundesliga");
+      </script>
+
+    </body>
+    </html>
+    </body>
+  </html>
+
+  

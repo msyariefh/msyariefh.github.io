@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="300"
+   viewBox="0 0 300 299.99999"
+   width="300"
+   version="1.1"
+   id="svg80"
+   sodipodi:docname="seriea.svg"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
+  <metadata
+     id="metadata86">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs84" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="724"
+     id="namedview82"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.2098081"
+     inkscape:cx="50.873812"
+     inkscape:cy="107.04177"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg80" />
+  <linearGradient
+     id="a">
+    <stop
+       offset="0"
+       stop-color="#147ad1"
+       id="stop29" />
+    <stop
+       offset="1"
+       stop-color="#002d71"
+       id="stop31" />
+  </linearGradient>
+  <linearGradient
+     id="b"
+     gradientUnits="userSpaceOnUse"
+     x1="371.89429"
+     x2="1334.9531"
+     xlink:href="#a"
+     y1="2114.7334"
+     y2="2670.7556" />
+  <linearGradient
+     id="c"
+     gradientUnits="userSpaceOnUse"
+     x1="2095.9402"
+     x2="1191.2711"
+     xlink:href="#a"
+     y1="2087.896"
+     y2="2721.3523" />
+  <linearGradient
+     id="d"
+     gradientUnits="userSpaceOnUse"
+     x1="1055.9733"
+     x2="1614.481"
+     xlink:href="#a"
+     y1="2523.6011"
+     y2="2201.1465" />
+  <linearGradient
+     id="e"
+     gradientUnits="userSpaceOnUse"
+     x1="1431.259"
+     x2="950.29858"
+     xlink:href="#a"
+     y1="1969.1974"
+     y2="1632.4252" />
+  <linearGradient
+     id="f"
+     gradientUnits="userSpaceOnUse"
+     x1="1149.2131"
+     x2="1842.0645"
+     xlink:href="#a"
+     y1="1610.6727"
+     y2="2303.5242" />
+  <linearGradient
+     id="g"
+     gradientUnits="userSpaceOnUse"
+     x1="1636.4025"
+     x2="1115.7302"
+     xlink:href="#a"
+     y1="2248.8899"
+     y2="2613.4685" />
+  <g
+     id="g114"
+     transform="matrix(1.3581656,0,0,1.3581656,-6.8044103,93.126998)">
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="309.8,2222.3 1254,2811 882,2222.3 "
+       id="polygon52"
+       style="clip-rule:evenodd;fill:url(#b);fill-rule:evenodd" />
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="1617.8,2222.3 1254,2811 2190.1,2222.3 "
+       id="polygon54"
+       style="clip-rule:evenodd;fill:url(#c);fill-rule:evenodd" />
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="882,2222.3 1254,2811 1254,2222.3 "
+       id="polygon56"
+       style="clip-rule:evenodd;fill:url(#d);fill-rule:evenodd" />
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="1249.9,1204.5 882,2222.3 1254,2222.3 "
+       id="polygon58"
+       style="clip-rule:evenodd;fill:url(#e);fill-rule:evenodd" />
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="1249.9,1204.5 1254,2222.3 1617.8,2222.3 "
+       id="polygon60"
+       style="clip-rule:evenodd;fill:url(#f);fill-rule:evenodd" />
+    <polygon
+       transform="matrix(0.09211422,0,0,0.09211422,2,-110.4621)"
+       points="1254,2222.3 1254,2811 1617.8,2222.3 "
+       id="polygon62"
+       style="clip-rule:evenodd;fill:url(#g);fill-rule:evenodd" />
+    <path
+       d="m 203.73935,94.243331 v 0 L 134.82871,-66.15516 c -15.81602,0 -19.58349,0 -35.767956,0 L 30.536985,94.243331 H 83.244742 L 117.13356,0.48947799 132.94958,44.170041 h -15.81602 l -9.0364,27.109215 h 34.64416 l 8.28107,22.964075 z"
+       id="path64"
+       inkscape:connector-curvature="0"
+       style="fill:#008fd7;stroke-width:0.09211422" />
+  </g>
+</svg>
