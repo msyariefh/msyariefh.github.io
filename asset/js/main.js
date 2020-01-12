@@ -60,6 +60,44 @@ function utcToWIB(utc){
       }
     return ({day : hari, date : tanggal, month : bulan, year : tahun, hour : jam, minute : menit})
 }
+function requestPermission() {
+  if ('Notification' in window) {
+    Notification.requestPermission().then(function (result) {
+      if (result === "denied") {
+        console.log("Fitur notifikasi tidak diijinkan.");
+        return;
+      } else if (result === "default") {
+        console.error("Pengguna menutup kotak dialog permintaan ijin.");
+        return;
+      }
+      
+      if (('PushManager' in window)) {
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+          registration.pushManager.subscribe({
+              userVisibleOnly: true,
+              applicationServerKey: urlBase64ToUint8Array("BGf73YEkfqfM0WWP2xMOjlfw5RwLM-LaEBTLVW1KtWxpR2UabnmFWZ5HGCHkY7kgrBy5PRk8_VwnJnuk9lE01Tc")
+          }).then(
+              console.log('Berhasil melakukan subscribe')
+          ).catch(function(e) {
+              console.error('Tidak dapat melakukan subscribe ', e.message);
+          });
+      });
+  }
+    });
+  }
+      }
+      function urlBase64ToUint8Array(base64String) {
+      const padding = '='.repeat((4 - base64String.length % 4) % 4);
+      const base64 = (base64String + padding)
+          .replace(/-/g, '+')
+          .replace(/_/g, '/');
+      const rawData = window.atob(base64);
+      const outputArray = new Uint8Array(rawData.length);
+      for (let i = 0; i < rawData.length; ++i) {
+          outputArray[i] = rawData.charCodeAt(i);
+      }
+      return outputArray;
+  }
 function getData(idParams, target){
     fetch(url_base + `/competitions/${idParams}/standings`,{
         headers: { 'X-Auth-Token': 'd05b43b0e31f4d6cb496ad1e6001263c' },
@@ -298,12 +336,14 @@ function getTimById(){
 
       <h4 class="center">Info Tim</h4>
       <h5 style="text-align:right;">Pelatih : ${getPelatih()} </h5>
-      <table class="highlight striped centered">
+      <table class="highlight striped centered responsive-table">
       <thead class="teal white-text">
           <tr>
-          <th>No</br>Punggung</th>
-          <th>Nama Pemain</th>
+          <th>Nama</th>
+          <th>Asal</th>
+          <th>Umur</th>
           <th>Posisi</th>
+          <th>Nomor</th>
           </tr>
         </thead>
         <tbody>
@@ -325,11 +365,15 @@ function getTimById(){
       let data_tambahan = ""
       data_tim.squad.forEach(Fungsi);
       function Fungsi(isi){
-        let nomor 
-        let posisi
+        console.log(isi)
+        let nomor; 
+        let posisi;
+        dulu = new Date(isi.dateOfBirth)
+        sekarang = new Date
+        let umur = sekarang.getFullYear() - dulu.getFullYear()
         if(isi.role === "PLAYER"){
           if(isi.shirtNumber == null){
-            nomor = "Tidak Ada Data"
+            nomor = "-"
           }else{
             nomor = isi.shirtNumber
           };
@@ -347,9 +391,11 @@ function getTimById(){
           data_tambahan +=
           `
           <tr>
-          <td>${nomor}</td>
           <td>${isi.name}</td>
+          <td>${isi.countryOfBirth}</td>
+          <td>${umur} tahun</td>
           <td>${posisi}</td>
+          <td>${nomor}</td>
           </tr>
           `
         }
