@@ -2,17 +2,17 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 workbox.loadModule('workbox-strategies');
 
 workbox.precaching.precacheAndRoute([
-  { url: '/index.html', revision: '1.1' },
+  { url: '/index.html', revision: '2' },
   { url: '/404.html', revision: '1.1' },
   { url: '/info_tim.html', revision: '1.1' },
   { url: '/favorit.html', revision: '1.1' },
   { url: '/favicon.ico', revision: '1' },
-  { url: '/service-worker.js', revision: '1.1' },
+  { url: '/service-worker.js', revision: '1.2' },
   { url: '/asset/manifest.json', revision: '1' },
   { url: '/asset/css/materialize.min.css', revision: '1' },
-  { url: '/asset/css/own.css', revision: '1.1' },
+  { url: '/asset/css/own.css', revision: '2' },
   { url: '/asset/js/idb.js', revision: '1' },
-  { url: '/asset/js/main.js', revision: '1.1' },
+  { url: '/asset/js/main.js', revision: '2' },
   { url: '/asset/js/materialize.min.js', revision: '1' },
   { url: '/asset/img/bundesliga.svg', revision: '1' },
   { url: '/asset/img/epl_logo.svg', revision: '1' },
