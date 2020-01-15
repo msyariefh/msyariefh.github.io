@@ -46,38 +46,7 @@ function utcToWIB(utc){
       }
     return ({day : hari, date : tanggal, month : bulan, year : tahun, hour : jam, minute : menit})
 }
-
-//Service worker
-function requestPermission() { 
- if (('PushManager' in window)) {
-  navigator.serviceWorker.getRegistration().then(function(registration) {
-      registration.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: "BGf73YEkfqfM0WWP2xMOjlfw5RwLM-LaEBTLVW1KtWxpR2UabnmFWZ5HGCHkY7kgrBy5PRk8_VwnJnuk9lE01Tc"
-      }).then(function(subscribe) {
-          console.log('Berhasil melakukan subscribe dengan endpoint: ', subscribe.endpoint);
-          console.log('Berhasil melakukan subscribe dengan p256dh key: ', btoa(String.fromCharCode.apply(
-              null, new Uint8Array(subscribe.getKey('p256dh')))));
-          console.log('Berhasil melakukan subscribe dengan auth key: ', btoa(String.fromCharCode.apply(
-              null, new Uint8Array(subscribe.getKey('auth')))));
-      }).catch(function(e) {
-          console.error('Tidak dapat melakukan subscribe ', e.message);
-      });
-  });
-}
-      function urlBase64ToUint8Array(base64String) {
-      const padding = '='.repeat((4 - base64String.length % 4) % 4);
-      const base64 = (base64String + padding)
-          .replace(/-/g, '+')
-          .replace(/_/g, '/');
-      const rawData = window.atob(base64);
-      const outputArray = new Uint8Array(rawData.length);
-      for (let i = 0; i < rawData.length; ++i) {
-          outputArray[i] = rawData.charCodeAt(i);
-      }
-      return outputArray;
-  }}
-
+ 
 //cek Db
 function cekDb(value){
   //buat db jika belum ada sekalian indexnya
