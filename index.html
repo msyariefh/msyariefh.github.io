@@ -37,7 +37,7 @@
           </div>
           <div class="card-tabs">
             <ul class="tabs tabsku row" style="height: unset;">
-              <li class="tab col s3" style="height: unset;"><a class="active" href="#epl">
+              <li class="tab col s4" style="height: unset;"><a class="active" href="#epl">
                 <div class="card">
                   <div class="card-image batas">
                     <img src="/asset/img/epl_logo.svg">
@@ -45,24 +45,17 @@
                 </div>
                 
               </a></li>
-              <li class="tab col s3" style="height: unset;"><a  href="#laliga">
+              <li class="tab col s4" style="height: unset;"><a  href="#laliga">
                 <div class="card">
                   <div class="card-image batas">
                     <img src="/asset/img/laliga.svg">
                   </div>
                 </div>
               </a></li>
-              <li class="tab col s3" style="height: unset;"><a href="#seriea">
+              <li class="tab col s4" style="height: unset;"><a href="#seriea">
                 <div class="card">
                   <div class="card-image batas">
                     <img src="/asset/img/seriea.svg">
-                  </div>
-                </div>
-              </a></li>
-              <li class="tab col s3" style="height: unset;"><a href="#bundesliga">
-                <div class="card">
-                  <div class="card-image batas">
-                    <img src="/asset/img/bundesliga.svg">
                   </div>
                 </div>
               </a></li>
@@ -116,21 +109,6 @@
                   </div>
                 </div>
               </div>
-              <div id="bundesliga">
-                <div class="wadah_prelod">
-                  <div class="preloader-wrapper small active">
-                    <div class="spinner-layer spinner-red-only">
-                      <div class="circle-clipper left">
-                        <div class="circle"></div>
-                      </div><div class="gap-patch">
-                        <div class="circle"></div>
-                      </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           
@@ -146,13 +124,16 @@
     </footer>
       <!--JavaScript at end of body for optimized loading-->
       <script src="/asset/js/main.js"></script>
+      <script src="/asset/js/getdata.js"></script>
       <script type="text/javascript" src="asset/js/materialize.min.js"></script>
       <script>
-        // Check that service workers are supported
         if ('serviceWorker' in navigator) {
-        // Use the window load event to keep the page load performant
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(console.log("service worker berhasil terdaftar"))
+                .catch(function(e){
+                  console.log("pendaftaran sw gagal, error :", e)
+                })
             });
         }
       </script>
@@ -164,7 +145,6 @@
         getData("PL", "epl");
         getData("PD", "laliga");
         getData("SA", "seriea");
-        getData("BL1", "bundesliga");
         requestPermission()
       </script>
 
